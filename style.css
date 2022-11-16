@@ -276,32 +276,15 @@ section{
     }
 }
 @media(max-width:500px){
-    body{
-        font-size: 6px;
-    }
+ 
     
-    .main_content h2{
-        font-size: 0.7em;
-    }
-    .main_content h3{
-        font-size: 1.4em;
-    }
-    
-    .logo{
-        font-size: 1.2em;
-    }
     .navigation a{
         font-size: 0.9em;
     }
-    .footer{
-        padding: 8px;
-    }
+   
 }
 @media(max-width:330px){
-    body{
-        font-size: 8px;
-    }
-    
+   
     
     .logo{
         font-size: 1.2em;
@@ -318,6 +301,6 @@ section{
         font-size: 0.8em;    
     }
     .contact .info p{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
