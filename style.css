@@ -276,9 +276,8 @@ section{
     }
 }
 
-@media(max-width:330px){
+@media(max-width:355px){
    
-    
    .header{
     padding: 10px;
 
@@ -297,5 +296,13 @@ section{
     }
     .contact .info p{
         font-size: 1em;
+    }
+    .main_btn{
+        font-size: 1.5em;
+        padding: 1.1em 2.3em;
+
+    }
+    .social_icons a{
+        font-size: 25px;
     }
 }
