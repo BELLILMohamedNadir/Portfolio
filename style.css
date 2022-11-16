@@ -278,4 +278,7 @@ section{
     body{
         font-size: 10px;
     }
+    .navigation a{
+        font-size: 0.9em;
+    }
 }
