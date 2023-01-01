@@ -33,7 +33,7 @@ header{
     padding-left: 15px;
 }
 .navigation :hover{
-    color: #3f6be2;
+    color: #1f50d6;
 }
 section{
     padding: 100px 120px;
@@ -43,9 +43,10 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #000000;
     align-self: center;
+    background: url(images/background.jpg) no-repeat;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
 }
 .main h2{
@@ -95,7 +96,7 @@ section{
 }
 .linkedin{
     margin-left: 70px;
-    color: rgb(184, 184, 184);
+    color: white;
 }
 .title{
     display: flex;
