@@ -1,232 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BELLIL Mohamed Nadir</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Nadir BELLIL | Software Engineer</title>
+  <meta name="description" content="Software Engineer portfolio of Mohamed Nadir BELLIL — mobile, backend, distributed systems, software architecture, and scalable product engineering." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
 
-    <header>
-        <a href="#" class="logo">BELLIL Mohamed Nadir</a>
-        <nav class="navigation">
-                 <a href="#services">Services</a>
-                <a href="#projects">Project</a>
-                <a href="#contacts">Contact</a>
-        </nav>
-    </header>
+  <!-- IMAGE LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  </div>
 
-    <section class="main">
-        <div>
-            <h2>Hello I'm Nadir <br> <span> Mobile Developer</span></br></h2>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="brand" aria-label="Go to home section">
+        <span class="brand-mark">MNB</span>
+        <span class="brand-text">Mohamed Nadir BELLIL</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-nav" href="#contact">Let's Talk</a>
+    </div>
+  </header>
 
-            <h3>I Build Apps</h3>
-            <a href="#projects" class="main_btn">View my projects</a>
-            <div class="social_icons">
-                <a href="https://www.linkedin.com/in/mohamed-nadir-bellil-ab749a256/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/BELLILMohamedNadir" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
-            </div>
-           
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineering • Mobile • Backend • Distributed Systems</p>
+          <h1>Software engineer building clean, scalable products across mobile, backend, and systems architecture.</h1>
+          <p class="hero-text">
+            Software engineer with strong experience in mobile development, backend systems,
+            real-time features, and software architecture. Currently completing an end-of-studies
+            Mobile AI engineering internship and available for a full-time CDI starting in August.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="cv.pdf" class="btn btn-ghost">Download CV</a>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/mohamed-nadir-bellil-ab749a256/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/BELLILMohamedNadir" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://bellilmohamednadir.github.io/Portfolio/" target="_blank" rel="noreferrer">Portfolio</a>
+          </div>
+          <div class="hero-metrics">
+            <article class="metric-card">
+              <span class="metric-label">Positioning</span>
+              <strong>Software Engineer</strong>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Strengths</span>
+              <strong>Architecture & Product Systems</strong>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Availability</span>
+              <strong>CDI from August</strong>
+            </article>
+          </div>
         </div>
-        
-
+        <div class="hero-visual">
+          <div class="portrait-shell">
+            <span class="orb orb-a" aria-hidden="true"></span>
+            <span class="orb orb-b" aria-hidden="true"></span>
+            <figure class="portrait-card">
+              <img src="/images/profile.jpg" alt="Portrait of Mohamed Nadir BELLIL" class="portrait-image" />
+              <figcaption class="portrait-caption">
+                <span class="status-dot"></span>
+                Open to full-time software engineering opportunities
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </section>
 
-<section class="cards" id="services">
-    <h2 class="title">Services</h2>
-    <div class="content">
-        <div class="card">
-            <div class="icon_dev">
-              <i class="fa-sharp fa-solid fa-code"></i>
-            </div>
-            <div class="info">
-              <h3 class="name">
-                Developing Mobile Apps
-              </h3>
-              <p>
-                Native Mobile Apps with <br><strong>java / kotlin</strong>
-                <span class="description_dev"><br> High Quality</span>
-              </p>
-            </div>
+    <!-- ABOUT -->
+    <section class="section section-surface" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">About</p>
+          <h2>Engineering with structure, clarity, and a strong product mindset.</h2>
+          <p>
+            Master 2 Software Engineering student at the University of Montpellier,
+            with hands-on experience across mobile development, backend systems,
+            software architecture, and real-time features. My work combines clean design,
+            maintainable code, and scalable engineering practices. I am especially interested
+            in building robust digital products that connect user experience, system reliability,
+            and long-term architectural quality.
+          </p>
         </div>
-    </div>
-</section>
-<section class="projects" id="projects">
-  <h2 class="title">Projects</h2>
-  <div class="content">
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/stage-connect-logo.png"/>
       </div>
-      <div class="project_info">
-          <p class="project_description">StageConnect</p>
-          <strong class="project_name">
-            <span>Internship management</span>
-          <a href="#StageConnect" class="more_details">More details</a></strong>
-      </div>
-    </div>
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/mobilis_logo.jpg"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Mail management</p>
-          <strong class="project_name">
-            <span>Mail Management</span>
-          <a href="#Mobilis" class="more_details">More details</a></strong>
-      </div>
-    </div>
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/booking_logo.png"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Booking App</p>
-          <strong class="project_name">
-            <span>Booking App</span>
-          <a href="#Booking" class="more_details">More details</a></strong>
-      </div>
-    </div>
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/calender_logo.png"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Calender App</p>
-          <strong class="project_name">
-            <span>Calender App</span>
-          <a href="#Calender" class="more_details">More details</a></strong>
-      </div>
-    </div>
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/planning_logo.png"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Daily Planning</p>
-          <strong class="project_name">
-            <span>Planning</span>
-          <a href="#Planning" class="more_details">More details</a></strong>
-      </div>
-  </div>
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/movie-logo.png"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Popular Movies</p>
-          <strong class="project_name">
-            <span>Movie</span>
-          <a href="#Movie" class="more_details">More details</a></strong>
-      </div>
-  </div>
-      <div class="project_card">
-          <div class="img_project">
-            <img src="images/fakernii-logo.png"/>
-          </div>
-          <div class="project_info">
-              <p class="project_description">Managging Trade</p>
-              <strong class="project_name">
-                <span>Fakarnii</span>
-              <a href="#Fakernii" class="more_details">More details</a></strong>
-          </div>
-      </div>
-    
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/news-logo.png"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Daily News</p>
-          <strong class="project_name">
-            <span>News</span>
-          <a href="#News" class="more_details">More details</a></strong>
-      </div>
-    </div>
-    <div class="project_card">
-      <div class="img_project">
-        <img src="images/cooking-logo.png"/>
-      </div>
-      <div class="project_info">
-          <p class="project_description">Cooking Recipe</p>
-          <strong class="project_name">
-            <span>Cooking</span>
-          <a href="#Cooking" class="more_details">More details</a></strong>
-      </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <!-- EXPERTISE -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Core Expertise</p>
+          <h2>Technologies organized around engineering domains.</h2>
+        </div>
+        <div class="expertise-grid">
 
-<section class="details" id="details">
-  <h2 class="title">Details</h2>
-  <div class="cards1">
-    <div class="img_project" id="StageConnect">
-      <img src="images/stage-connect.png"/>
+          <article class="expertise-card">
+            <div class="expertise-head">
+              <div class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation"><rect x="6" y="3" width="12" height="18" rx="2"></rect><circle cx="12" cy="17" r="1.2"></circle></svg>
+              </div>
+              <div>
+                <h3>Mobile Development</h3>
+                <p>Building polished, maintainable client applications.</p>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Kotlin</span><span class="tag">Android SDK</span>
+              <span class="tag">Jetpack Compose</span><span class="tag">MVVM</span>
+              <span class="tag">Coroutines</span><span class="tag">Kotlin Flow</span>
+              <span class="tag">RoomDB</span><span class="tag">Hilt / Dagger</span>
+            </div>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-head">
+              <div class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation"><path d="M4 7h16M4 12h16M4 17h10"></path></svg>
+              </div>
+              <div>
+                <h3>Backend & APIs</h3>
+                <p>Designing services, APIs, and real-time communication flows.</p>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Spring Boot</span><span class="tag">REST APIs</span>
+              <span class="tag">WebSockets</span><span class="tag">JWT Authentication</span>
+            </div>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-head">
+              <div class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation"><circle cx="6" cy="12" r="2"></circle><circle cx="18" cy="6" r="2"></circle><circle cx="18" cy="18" r="2"></circle><path d="M8 12h8M16.5 7.5l-8 4.5M16.5 16.5l-8-4.5"></path></svg>
+              </div>
+              <div>
+                <h3>Engineering</h3>
+                <p>Architecting systems with scalability and maintainability in mind.</p>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Distributed Systems</span><span class="tag">Algorithms</span>
+              <span class="tag">System Design</span><span class="tag">Design Patterns</span>
+            </div>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-head">
+              <div class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation"><path d="M4 14l4-4 4 4 8-8"></path><path d="M18 6h2v2"></path></svg>
+              </div>
+              <div>
+                <h3>Tools & Delivery</h3>
+                <p>Supporting reliable workflows and engineering quality.</p>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Git</span><span class="tag">Docker</span>
+              <span class="tag">Maven</span><span class="tag">CI/CD</span><span class="tag">JUnit 5</span>
+            </div>
+          </article>
+
+          <article class="expertise-card">
+            <div class="expertise-head">
+              <div class="icon-badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="presentation"><ellipse cx="12" cy="6" rx="6.5" ry="2.5"></ellipse><path d="M5.5 6v6c0 1.4 2.9 2.5 6.5 2.5s6.5-1.1 6.5-2.5V6"></path><path d="M5.5 12v6c0 1.4 2.9 2.5 6.5 2.5s6.5-1.1 6.5-2.5v-6"></path></svg>
+              </div>
+              <div>
+                <h3>Databases</h3>
+                <p>Working with structured, realtime, and distributed data stores.</p>
+              </div>
+            </div>
+            <div class="tag-list">
+              <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span>
+              <span class="tag">Redis</span><span class="tag">SQLite</span>
+              <span class="tag">Firebase Realtime DB</span>
+            </div>
+          </article>
+
+          <article class="highlight-panel">
+            <p class="highlight-label">Approach</p>
+            <h3>Clean systems, readable code, and strong organization.</h3>
+            <p>I focus on building software that is not only functional, but also understandable, evolvable, and aligned with real product needs.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-surface" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Featured Projects</p>
+          <h2>Selected work across software engineering, product systems, and architecture.</h2>
+        </div>
+        <div class="projects-grid">
+
+          <!-- Stage-Connect: full width row 1 -->
+          <article class="project-card project-featured">
+            <div class="project-visual project-image-visual">
+              <div class="visual-toolbar">
+                <span>Featured Case Study</span>
+                <span>Click image to expand</span>
+              </div>
+              <div class="featured-image-frame">
+                <img
+                  src="/images/stage-connect.png"
+                  alt="Stage-Connect application overview screens"
+                  class="featured-project-image js-lightbox-trigger"
+                  title="Click to expand"
+                />
+                <div class="img-zoom-hint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-label">Software Platform</p>
+              <h3>Stage-Connect Internship Platform</h3>
+              <p>Full-stack hiring platform with a clean client architecture, secured REST API, and real-time messaging.</p>
+              <div class="tag-list">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">MVVM</span>
+                <span class="tag">Coroutines</span>
+                <span class="tag">Kotlin Flow</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">WebSockets</span>
+                <span class="tag">JWT</span>
+                 <span class="tag">Clean Architecture</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/BELLILMohamedNadir/Stage-Connect" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Android App
+                </a>
+                <a href="https://github.com/BELLILMohamedNadir/stage-connect-backend" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Backend
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- E-Commerce: full width row 2 -->
+<article class="project-card project-ecommerce">
+
+  <!-- Diagram row -->
+  <div class="project-mermaid-visual">
+    <div class="mermaid-frame">
+      <pre class="mermaid">
+graph LR
+    classDef service fill:#dae8fc,stroke:#6c8ebf,stroke-width:2px
+    classDef db fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+    classDef infra fill:#f8cecc,stroke:#b85450,stroke-width:2px
+    classDef external fill:#e1d5e7,stroke:#9673a6,stroke-width:2px
+    classDef gateway fill:#1ba1e2,stroke:#006EAF,stroke-width:3px,color:#fff
+
+    Client[Client]
+    Keycloak[🔐 Keycloak<br/>Identity Provider]:::external
+    APIGateway[API Gateway<br/>Spring Boot 3]:::gateway
+
+    subgraph PrivateNetwork["Private Network"]
+        Customer[Customer Service<br/>Spring Boot 4]:::service
+        Product[Product Service<br/>Spring Boot 4]:::service
+        Order[Order Service<br/>Spring Boot 4]:::service
+        Payment[Payment Service<br/>Spring Boot 4]:::service
+        Notification[Notification Service<br/>Spring Boot 4]:::service
+
+        MongoCustomer[(Customer DB<br/>MongoDB)]:::db
+        ProductDB[(Product DB<br/>PostgreSQL)]:::db
+        OrderDB[(Order DB<br/>PostgreSQL)]:::db
+        PaymentDB[(Payment DB<br/>PostgreSQL)]:::db
+        MongoNotif[(Notification DB<br/>MongoDB)]:::db
+
+        Kafka{Kafka<br/>Message Broker}:::infra
+        MailDev[📧 MailDev]:::external
+    end
+
+    Zipkin[(Zipkin<br/>Distributed Tracing)]:::infra
+    Eureka[Eureka Server<br/>Discovery Service]:::infra
+    ConfigServer[Config Server<br/>Spring Cloud Config]:::infra
+
+    Client -->|1. Login| Keycloak
+    Client -->|2. Request + JWT| APIGateway
+    APIGateway -.->|3. Validate Token| Keycloak
+
+    APIGateway -.->|/customers| Customer
+    APIGateway -.->|/products| Product
+    APIGateway -.->|/orders| Order
+    APIGateway -.->|/payments| Payment
+
+    Order -.->|"Verify Customer (Retry)"| Customer
+    Order -.->|"Purchase Products (Circuit Breaker)"| Product
+    Order -.->|"Process Payment (Circuit Breaker)"| Payment
+
+    Order -->|Publish: order-topic| Kafka
+    Payment -->|Publish: payment-topic| Kafka
+    Kafka -->|Consume| Notification
+
+    Customer --- MongoCustomer
+    Product --- ProductDB
+    Order --- OrderDB
+    Payment --- PaymentDB
+    Notification --- MongoNotif
+
+    Notification -->|Send Email| MailDev
+
+    Customer -.->|Register| Eureka
+    Product -.->|Register| Eureka
+    Order -.->|Register| Eureka
+    Payment -.->|Register| Eureka
+    Notification -.->|Register| Eureka
+    APIGateway -.->|Register| Eureka
+
+    Customer -.->|Pull Config| ConfigServer
+    Product -.->|Pull Config| ConfigServer
+    Order -.->|Pull Config| ConfigServer
+    Payment -.->|Pull Config| ConfigServer
+    Notification -.->|Pull Config| ConfigServer
+    APIGateway -.->|Pull Config| ConfigServer
+
+    PrivateNetwork -.->|Async Traces| Zipkin
+      </pre>
     </div>
-    <div class="img_project" id="Mobilis">
-      <img src="images/mobilis.png"/>
-    </div>
-    <div class="img_project" id="Booking">
-      <img src="images/booking.png"/>
-    </div>
-    <div class="img_project" id="Calender">
-      <img src="images/calender.png"/>
-    </div>
-    <div class="img_project" id="Planning">
-      <img src="images/planning.png"/>
-    </div>
-    <div class="img_project" id="Movie">
-      <img src="images/movie.png"/>
-    </div>
-    <div class="img_project" id="Fakernii">
-      <img src="images/fakernii.png"/>
-    </div>
-    <div class="img_project" id="News">
-      <img src="images/news.png"/>
-    </div>
-    <div class="img_project" id="Cooking">
-      <img src="images/cooking.png"/>
-    </div>
-   
+  </div>
+
+  <!-- Content row — full width, separate from diagram -->
+<div class="project-content">
+  <p class="project-label">Distributed Architecture</p>
+  <h3>Distributed E-Commerce Ecosystem</h3>
+  <p>Fault-tolerant microservices system using service gateway, circuit breakers, synchronous and asynchronous communication.</p>
+  <div class="tag-list">
+    <span class="tag">Java</span>
+    <span class="tag">Spring Boot</span>
+    <span class="tag">Kafka</span>
+    <span class="tag">Resilience4j</span>
+    <span class="tag">OpenFeign</span>
+    <span class="tag">Zipkin</span>
+    <span class="tag">Eureka</span>
+    <span class="tag">Keycloak</span>
+    <span class="tag">Docker</span>
+  </div>
+  <div class="project-actions">
+    <a href="https://github.com/BELLILMohamedNadir/ecommerce-app" target="_blank" rel="noreferrer" class="btn btn-secondary">
+      <svg class="btn-icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      GitHub
+    </a>
+  </div>
 </div>
-</section>
 
-<section class="cards contact" id="contacts">
-  <h2 class="title">Contact</h2>
-  <div class="content">
-      <div class="card">
-          <div class="icon_dev">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="info">
-            <h3 class="name">
-              Email
-            </h3>
-            <p>
-              bellil.mohamednadir@gmail.com 
-            </p>
-          </div>
+
+</article>
+
+
+          <!-- Observability: row 3 left -->
+          <article class="project-card">
+            <div class="project-visual">
+              <div class="visual-panel observability-panel">
+                <div class="bars">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="chips">
+                  <span>Traces</span><span>Latency</span><span>Logs</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-label">Observability & Analysis</p>
+              <h3>Distributed User Profiling & Observability Engine</h3>
+              <p>Behavioral analysis engine with structured logs and distributed tracing for latency bottleneck detection.</p>
+              <div class="tag-list">
+                <span class="tag">OpenTelemetry</span><span class="tag">Zipkin</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/BELLILMohamedNadir/user-profiling-backend" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- AST: row 3 right -->
+          <article class="project-card">
+            <div class="project-visual">
+              <div class="visual-panel ast-panel">
+                <div class="ast-tree">
+                  <div class="ast-node ast-root">ClassDeclaration</div>
+                  <div class="ast-children">
+                    <div class="ast-node">MethodDecl<br/><span>complexity: 4</span></div>
+                    <div class="ast-node">FieldDecl<br/><span>coupling: 2</span></div>
+                    <div class="ast-node ast-highlight">Module A<br/><span>cohesion: 0.87</span></div>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>AST</span><span>Spoon</span><span>Modularization</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-label">Software Analysis</p>
+              <h3>Static Analysis & Modularization Engine</h3>
+              <p>AST-based analysis tool for software complexity, architectural coupling, and automatic modular reconstruction.</p>
+              <div class="tag-list">
+                <span class="tag">Java</span><span class="tag">Spoon</span>
+                <span class="tag">Eclipse JDT</span><span class="tag">Algorithms</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/BELLILMohamedNadir/static-analysis-part1" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Part 1
+                </a>
+                <a href="https://github.com/BELLILMohamedNadir/static-analysis-part2" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Part 2
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
-  </div>
-</section>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Experience</p>
+          <h2>Product engineering shaped by architecture, applied AI, and real-time systems.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Mobile AI Software Engineer (End-of-Studies Internship)</h3>
+                  <p class="timeline-company">AI-Stroke — Montpellier, France</p>
+                </div>
+                <p class="timeline-date">Feb. 2026 — July 2026</p>
+              </div>
+              <ul class="timeline-list">
+                <li>Selected as the sole Android engineer contributing to the architectural porting of a research computer-vision assessment system from a Windows/Python environment to Android tablets.</li>
+                <li>Working on Android application architecture using Kotlin, MVVM, and Coroutines within a real-time mobile evaluation workflow.</li>
+                <li>Participating in adaptation and optimization of on-device computer-vision inference components for mobile deployment.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3>Software Engineer Intern</h3>
+                  <p class="timeline-company">ATM Mobilis — Algiers, Algeria</p>
+                </div>
+                <p class="timeline-date">Feb. 2023 — June 2023</p>
+              </div>
+              <ul class="timeline-list">
+                <li>Developed a full-stack document management system using Spring Boot and Android, streamlining internal HR workflows.</li>
+                <li>Implemented real-time messaging features using WebSockets and Firebase Cloud Messaging.</li>
+                <li>Designed secure REST APIs using JWT authentication.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-surface" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Education</p>
+          <h2>Academic foundation across engineering, data, and technology management.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <p class="education-date">Sept. 2024 — Expected July 2026</p>
+            <h3>Master 2 in Software Engineering</h3>
+            <p>University of Montpellier</p>
+          </article>
+          <article class="education-card">
+            <p class="education-date">Sept. 2024 — Expected July 2026</p>
+            <h3>Master in Management of Technologies & Sciences (Double Degree)</h3>
+            <p>University of Montpellier (IAE)</p>
+          </article>
+          <article class="education-card">
+            <p class="education-date">Sept. 2023 — June 2024</p>
+            <h3>Master 1 in Big Data Analytics</h3>
+            <p>University of Science and Technology (USTHB)</p>
+          </article>
+          <article class="education-card">
+            <p class="education-date">Sept. 2020 — June 2023</p>
+            <h3>Bachelor of Computer Science</h3>
+            <p>University of Science and Technology (USTHB)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <p class="section-tag">Contact</p>
+            <h2>Open to software engineering opportunities with strong product and architecture challenges.</h2>
+            <p>Currently available for a full-time CDI starting in August and interested in teams where clean systems, scalability, and engineering quality matter.</p>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:mohamednadirbellil@gmail.com">
+              <span>Email</span>
+              <strong>mohamednadirbellil@gmail.com</strong>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/mohamed-nadir-bellil-ab749a256/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span>
+              <strong>Professional profile</strong>
+            </a>
+            <a class="contact-link" href="https://github.com/BELLILMohamedNadir" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <strong>Code and projects</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Mohamed Nadir BELLIL</p>
+      <p>&copy; 2026 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mermaid CDN -->
+  <script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default',
+    flowchart: {
+      curve: 'basis',
+      padding: 20,
+      useMaxWidth: false,
+      htmlLabels: true
+    }
+  });
+</script>
 
 
+  <!-- Lightbox -->
+  <script>
+    (function () {
+      const lightbox    = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const closeBtn    = document.getElementById('lightbox-close');
 
-<footer class="footer">
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt;
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+        setTimeout(() => { lightboxImg.src = ''; }, 300);
+      }
 
-  <p class="footer_title">Copyright @<span>BELLIL Mohamed Nadir</span></p>
-  <div class="social_icons">
-    <a href="https://www.linkedin.com/in/mohamed-nadir-bellil-ab749a256/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/BELLILMohamedNadir" target="_blank" class="github1"><i class="fa-brands fa-github"></i></a>
-</div>
+      document.querySelectorAll('.js-lightbox-trigger').forEach(function (img) {
+        img.addEventListener('click', function () { openLightbox(img.src, img.alt); });
+      });
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+    })();
+  </script>
 
-</footer>
-  </body>
+</body>
 </html>
