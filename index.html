@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed Nadir BELLIL | Software Engineer</title>
   <meta name="description" content="Software Engineer portfolio of Mohamed Nadir BELLIL — mobile, backend, distributed systems, software architecture, and scalable product engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Instrument Serif (display italic for editorial accents) + Inter (body sans).
+       Instrument Serif is the de facto elegance font for 2026 portfolios —
+       a high-contrast Didone-adjacent serif whose italic carries personality
+       no geometric sans can match. Used only on the H1 accent and section
+       eyebrows; body copy stays in Inter for readability. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -41,7 +49,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Software Engineering • Mobile • Backend • Distributed Systems</p>
-          <h1>Software engineer building clean, scalable products across mobile, backend, and systems architecture.</h1>
+          <h1>Software engineer building <span class="h1-serif">clean, scalable products</span> across mobile, backend, and systems architecture.</h1>
           <p class="hero-text">
             Software engineer with strong experience in mobile development, backend systems,
             real-time features, and software architecture. Currently completing an end-of-studies
@@ -241,6 +249,81 @@
           <h2>Selected work across software engineering, product systems, and architecture.</h2>
         </div>
         <div class="projects-grid">
+
+          <!-- Safek: full-width row 1, currently in closed test on Google Play.
+               Most recent + only project shipping to real users on the Play
+               Store, so it leads the section. -->
+          <article class="project-card project-featured">
+            <div class="project-visual project-image-visual">
+              <div class="visual-toolbar">
+                <span>Live Product · Closed Test on Google Play</span>
+                <span>Click image to expand</span>
+              </div>
+              <div class="featured-image-frame">
+                <img
+                  src="/images/safek/banner.png"
+                  alt="Safek — digital queue management for small shops"
+                  class="featured-project-image js-lightbox-trigger"
+                  title="Click to expand"
+                />
+                <div class="img-zoom-hint" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                </div>
+              </div>
+              <!-- Phone-screenshot strip below the banner. Each is a Play
+                   Store marketing asset; clicking opens the lightbox so a
+                   recruiter can read the screen copy. The 4 chosen here
+                   tell the owner's story arc: queue → QR → call-next → end
+                   of day analytics. Remaining 4 stay in the gallery for
+                   the press kit but don't bloat the project card. -->
+              <div class="safek-shots">
+                <img src="/images/safek/safek_play_01.png" alt="Safek — owner dashboard, no more shouting" class="safek-shot js-lightbox-trigger" loading="lazy" />
+                <img src="/images/safek/safek_play_02.png" alt="Safek — customer joins via QR scan, no app needed" class="safek-shot js-lightbox-trigger" loading="lazy" />
+                <img src="/images/safek/safek_play_05.png" alt="Safek — owner taps Call Next, customer is notified" class="safek-shot js-lightbox-trigger" loading="lazy" />
+                <img src="/images/safek/safek_play_07.png" alt="Safek — end-of-day analytics for the shop owner" class="safek-shot js-lightbox-trigger" loading="lazy" />
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-label">Production B2B Platform · Multi-Surface</p>
+              <h3>Safek — Digital Queue Management for Small Shops</h3>
+              <p>
+                Full B2B product that lets shop owners run a digital queue
+                without the chaos. Native Android app for owners (Kotlin +
+                Compose, MVVM, real-time STOMP-over-WebSocket via krossbow,
+                Firebase Auth + Crashlytics, Play Billing). No-install PWA for
+                customers — they scan a QR code, get a ticket, and their phone
+                buzzes when it's their turn. Spring Boot backend with
+                PostgreSQL, JWT-validated REST + WebSocket, deployed on
+                Railway with Cloudflare Workers fronting the PWA. Owns the
+                full product lifecycle: design, Android, backend, PWA, marketing
+                landing, Play Store submission.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Jetpack Compose</span>
+                <span class="tag">MVVM</span>
+                <span class="tag">Hilt</span>
+                <span class="tag">Room</span>
+                <span class="tag">krossbow STOMP</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Cloudflare Workers</span>
+                <span class="tag">Vite PWA</span>
+                <span class="tag">Play Billing</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.safek.android" target="_blank" rel="noreferrer" class="btn btn-primary">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 2.5v19c0 .5.6.8 1 .5l13-9.5c.3-.3.3-.7 0-1L4 2c-.4-.3-1 0-1 .5z"/></svg>
+                  Google Play
+                </a>
+                <a href="https://safek.app/" target="_blank" rel="noreferrer" class="btn btn-secondary">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+                  safek.app
+                </a>
+              </div>
+            </div>
+          </article>
 
           <!-- Stage-Connect: full width row 1 -->
           <article class="project-card project-featured">
@@ -647,6 +730,10 @@ graph LR
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({
     startOnLoad: true,
+    /* Light theme — matches the warm cream Safek-inspired palette.
+       The diagram already uses pastel classDef fills inline (blue,
+       green, red, purple) so a default light canvas keeps them
+       readable without per-node overrides. */
     theme: 'default',
     flowchart: {
       curve: 'basis',
