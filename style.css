@@ -262,29 +262,12 @@ p, li {
   justify-content: space-between; gap: var(--space-4);
 }
 .brand {
-  display: inline-flex; align-items: center; gap: 0.7rem; min-width: 0;
-  /* Subtle hover bump on the entire brand cluster — the mark and
-     text track together. */
+  display: inline-flex; align-items: center; min-width: 0;
   transition: opacity var(--transition);
 }
 .brand:hover { opacity: 0.85; }
-.brand-mark {
-  /* Flat single-color mark instead of the brown→orange gradient that
-     read as 2010-SaaS. The deep-brown fill + tight letter-spacing +
-     subtle inner highlight (via the inset shadow) feels editorial,
-     like a printed monogram. */
-  width: 2.4rem; height: 2.4rem; display: inline-grid; place-items: center;
-  border-radius: 10px;
-  background: var(--accent);
-  color: var(--bg);
-  font-size: 0.74rem; font-weight: 700; letter-spacing: 0.10em;
-  font-family: var(--font-mono);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 6px 16px -10px var(--accent-glow);
-}
 .brand-text {
-  color: var(--text-strong); font-size: 0.94rem;
+  color: var(--text-strong); font-size: 0.98rem;
   font-weight: 600; white-space: nowrap;
   letter-spacing: -0.01em;
 }
@@ -773,7 +756,7 @@ p, li {
 }
 
 @media (max-width: 699px) {
-  .brand-text { display: none; }
+  .brand-text { font-size: 0.86rem; letter-spacing: -0.015em; }
   .section { padding: 4.5rem 0; }
   .btn-nav { min-height: 42px; padding: 0 0.9rem; font-size: 0.88rem; }
   .project-visual { min-height: 200px; }
